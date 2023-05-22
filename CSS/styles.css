@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -24,19 +25,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg {
-    height: 100vh;
+    height: 30vh;
     width: 100vw;
     background-color: beige;
     background-image: url(https://images.unsplash.com/photo-1684130840882-d49a25fcd869?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
 }
 
 h2 {
     text-decoration: underline;
-    font-size: 6.4rem;
+    font-size: 4.4rem;
 }
 
 p {
@@ -55,4 +56,48 @@ a:visited {
 
 a:hover {
     color: slateblue;
+}
+
+table, td, th {
+    border: 1px solid blueviolet;
+}
+
+
+
+table tr:first-child {
+    background-color: steelblue;
+    color: aliceblue;
+}
+
+table tr:nth-child(2n + 2){
+    background-color: olivedrab;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: collapse;
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+}
+
+ul {
+    list-style: georgian;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+.box {
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: gray;
+    color: chartreuse;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 2rem;
 }
