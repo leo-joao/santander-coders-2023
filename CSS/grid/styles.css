@@ -1,0 +1,72 @@
+.bg {
+    height: 20vh;
+    width: 100%;
+    background-color: beige;
+    background-image: url(https://images.unsplash.com/photo-1636808037213-bc06cfa6931b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.box {
+    /* min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem; */
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    border: solid 10px salmon;
+    background-color: teal;
+}
+
+.box p, button {
+    font-size: 4rem;
+}
+
+.boxes {
+    height: calc(100vh);
+    position: relative;
+    display: grid;
+    justify-content: flex-start;
+    gap: 1rem 1rem;
+    /* row-gap: 2rem;
+    column-gap: 3rem; */
+
+    /* grid-template-columns: 3fr 1fr 1fr; */
+    grid-template-columns: 3fr repeat(2, 1fr);
+    /* grid-template-rows: minmax(1fr , 10fr) 1fr 2fr 1fr; */
+}
+
+main {
+    grid-area: title;
+}
+
+aside {
+    grid-area: login;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.page-content {
+    height: 100vh;
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .page-content {
+        display: grid;
+        gap: 5rem 0;
+
+        grid-template-areas: 
+        "title title login"
+        "title title login"
+        ". . login"
+        "footer footer footer"
+        ;
+    }
+}
+
