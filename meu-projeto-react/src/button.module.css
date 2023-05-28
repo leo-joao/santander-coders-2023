@@ -1,0 +1,12 @@
+.myButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #181326;
+    border-radius: 4px;
+    background-color: #a6f750;
+}
+
+/* Fazer a estilização num módulo garante que a estilização fica encapsulada para aquele único objeto que quero estilizar, mesmo que eu possua outros objetos com o mesmo nome de classe */
