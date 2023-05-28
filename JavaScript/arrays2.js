@@ -1,5 +1,3 @@
-//  Métodos e funções tem parênteses no final
-
 let array1 = [30, 12, 45, 34, 29];
 let array2 = [];
 
